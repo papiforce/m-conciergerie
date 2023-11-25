@@ -15,9 +15,13 @@
     </nav>
 
     <main>
-      <section></section>
-
-      <section></section>
+      <section id="us">
+        <div class="sectionHeading">
+          <p>À propos de nous</p>
+          <h2>Ce qu'il faut savoir</h2>
+        </div>
+        <p style="text-align: center">A VENIR</p>
+      </section>
 
       <section id="services">
         <div class="sectionHeading">
@@ -168,7 +172,27 @@
           </div>
         </div>
       </section>
-      <section></section>
+
+      <section id="contact">
+        <div class="sectionHeading">
+          <p>Contact</p>
+          <h2>Remplissez notre formulaire</h2>
+        </div>
+        <form id="formulaire">
+          <label for="name">Votre nom (*)</label>
+          <input id="inputName" name="name" type="text" autocomplete="off" />
+          <label for="email">Votre adresse mail (*)</label>
+          <input id="inputMail" name="email" type="email" autocomplete="off" />
+          <label for="message">Votre message (*)</label>
+          <textarea
+            id="inputMessage"
+            name="message"
+            rows="10"
+            autocomplete="off"
+          ></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
     </main>
 
     <footer>
