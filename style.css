@@ -92,11 +92,22 @@ main .grid {
 main #services .grid .serviceContainer {
   background: #16161a;
   padding: 16px;
+  border: 2px solid transparent;
   border-radius: 8px;
   max-width: 480px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  transition: all 0.5s;
+
+  &:hover {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+  }
+
+  &:hover .title img {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
 main #services .grid .serviceContainer .title {
@@ -110,11 +121,13 @@ main #services .grid .serviceContainer .title {
 }
 
 main #services .grid .serviceContainer .title img {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   padding: 12px;
   background: #242629;
   border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.5s;
 }
 
 main #services .grid .serviceContainer .description {
@@ -126,12 +139,23 @@ main #pricing .grid .pricingContainer {
   background: #16161a;
   padding: 16px 16px 24px;
   border-radius: 12px;
+  border: 2px solid transparent;
   max-width: 400px;
   width: 100%;
   height: max-content;
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.02);
+    background: #242629;
+  }
+
+  &:hover .right img {
+    background: #16161a;
+  }
 }
 
 main #pricing .grid .pricingContainer p {
@@ -174,6 +198,7 @@ main #pricing .grid .pricingContainer .right img {
   background: #242629;
   border-radius: 6px;
   margin-left: 24px;
+  transition: all 0.5s;
 }
 
 main #contact form {
