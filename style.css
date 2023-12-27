@@ -65,7 +65,7 @@ main section:not(:last-of-type) {
 
 @media (max-width: 768px) {
   main section:not(:last-of-type) {
-    margin-bottom: 64px !important;
+    margin-bottom: 96px !important;
   }
 }
 
@@ -161,7 +161,7 @@ main #hero .chevron {
   }
 
   40% {
-    bottom: 36px;
+    bottom: 40px;
   }
 
   100% {
